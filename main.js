@@ -21,13 +21,7 @@ function validatePassword() {
 
     return false;
 }
-
 document.getElementById('submit').addEventListener('click', function () {
-    validateName();
-    validatePassword();
-});
-
-document.getElementByID('validate-form').addEventListener('click', function () {
     if (validateName() && validatePassword()) {
         alert('Success');
     }
